@@ -37,14 +37,14 @@ CREATE TABLE product_item (
 );
 
 INSERT INTO user (name, password) VALUES ('someUser', '!@#$%^&*()');
-INSERT INTO product_category (name) VALUES ('Кеды');
-INSERT INTO product_category (name) VALUES ('Лапти');
-INSERT INTO product_category (name) VALUES ('Табуретки');
+INSERT INTO product_category (name) VALUES ('Sneakers');
+INSERT INTO product_category (name) VALUES ('Shoes');
+INSERT INTO product_category (name) VALUES ('Stools');
 INSERT INTO product (name, price, category_id, count) VALUES ('Reebok', 59.99, 1, 100500);
-INSERT INTO product (name, price, category_id, count) VALUES ('Лапти Reebok', 9.99, 2, 100501);
+INSERT INTO product (name, price, category_id, count) VALUES ('Reebok Shoes', 9.99, 2, 100501);
 INSERT INTO product (name, price, category_id, count) VALUES ('Nike', 69.69, 1, 100502);
-INSERT INTO product (name, price, category_id, count) VALUES ('Nike Лапти', 59.99, 2, 100503);
+INSERT INTO product (name, price, category_id, count) VALUES ('Nike Shoes', 59.99, 2, 100503);
 INSERT INTO product (name, price, category_id, count) VALUES ('Nike Super', 899.99, 1, 100504);
 INSERT INTO product (name, price, category_id, count) VALUES ('New Nike', 999.99, 1, 100504);
-INSERT INTO product (name, price, category_id, count) VALUES ('Сидушка Дьявова', 0.01, 3, 100505);
-INSERT INTO product (name, price, category_id, count) VALUES ('Святое Сидло', 9999.99, 3, 100506);
+INSERT INTO product (name, price, category_id, count) VALUES ('Stool of Devil', 0.01, 3, 100505);
+INSERT INTO product (name, price, category_id, count) VALUES ('Holy Stool', 9999.99, 3, 100506);

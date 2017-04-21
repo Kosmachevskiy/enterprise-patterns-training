@@ -25,9 +25,9 @@ public class ProductCategoryTableGatewayTest {
         Assert.assertNotNull(gateway);
 
 
-        Assert.assertEquals("Кеды", gateway.getNameById(1l));
-        Assert.assertEquals("Лапти", gateway.getNameById(2l));
-        Assert.assertEquals("Табуретки", gateway.getNameById(3l));
+        Assert.assertEquals("Sneakers", gateway.getNameById(1l));
+        Assert.assertEquals("Shoes", gateway.getNameById(2l));
+        Assert.assertEquals("Stools", gateway.getNameById(3l));
     }
 
     @Test
