@@ -14,7 +14,7 @@ import java.util.Arrays;
  * @author Konstantin Kosmachevskiy
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {TestConfig.class, ProductCategoryTableGateway.class})
+@ContextConfiguration(classes = {TestConfig.class, ProductCategoryTableGatewayImpl.class})
 public class ProductCategoryTableGatewayTest {
 
     @Autowired

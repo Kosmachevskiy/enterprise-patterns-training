@@ -15,7 +15,7 @@ import java.util.List;
  * @author Konstantin Kosmachevskiy
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {TestConfig.class, ProductTableGateway.class})
+@ContextConfiguration(classes = {TestConfig.class, ProductTableGatewayImpl.class})
 public class ProductTableGatewayTest {
 
     @Autowired

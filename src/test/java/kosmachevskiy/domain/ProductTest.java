@@ -1,8 +1,8 @@
 package kosmachevskiy.domain;
 
 import kosmachevskiy.TestConfig;
-import kosmachevskiy.persistence.ProductCategoryTableGateway;
-import kosmachevskiy.persistence.ProductTableGateway;
+import kosmachevskiy.persistence.ProductCategoryTableGatewayImpl;
+import kosmachevskiy.persistence.ProductTableGatewayImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +19,9 @@ import static org.junit.Assert.assertNotNull;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {
         TestConfig.class,
-        ProductTableGateway.class,
+        ProductTableGatewayImpl.class,
         Product.class,
-        ProductCategoryTableGateway.class})
+        ProductCategoryTableGatewayImpl.class})
 public class ProductTest {
 
     @Autowired
