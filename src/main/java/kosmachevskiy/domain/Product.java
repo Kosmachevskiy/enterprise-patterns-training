@@ -22,14 +22,16 @@ public class Product {
     private ProductCategoryTableGateway productCategoryTableGateway;
 
     public List<ProductDTO> getAll() {
-
         List<ProductDTO> all = productTableGateway.getAll();
-
         injectCategories(all);
-
         return all;
     }
 
+    /**
+     * It is instead of SQL join.
+     * Method resolves product category ID to product category string value.
+     * @param all
+     */
     private void injectCategories(List<ProductDTO> all) {
         for (ProductDTO productDTO : all) {
             long productCategoryId = productTableGateway.getProductCategoryIdByProductId(productDTO.getId());
